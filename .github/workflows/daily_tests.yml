@@ -1,9 +1,6 @@
 name: Daily Tests
 on:
-  schedule:
-  - cron:  '0 8 * * *'
-  repository_dispatch:
-    types: [daily_tests]
+  push:
 env:
   GO111MODULE: on
 
